@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="description" content="Developer.overheid.nl Tech Radar: POC">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>POC Developer.overheid.nl Tech Radar</title>
+<link rel="shortcut icon" href="https://developer.overheid.nl/favicon.ico">
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="radar.js"></script>
+
+<link rel="stylesheet" href="radar.css">
+</head>
+
+<body>
+
+<svg id="radar"></svg>
+
+<script>
+fetch('./config.json').then(function(response) {
+  return response.json();
+}).then(function(data) {
+  radar_visualization({
+    repo_url: "https://github.com/developer-overheid.nl/tech-radar",
+    title: "Developer.overheid.nl Tech Radar",
+    date: data.date,
+    quadrants: [
+      { name: "Talen & Frameworks" },
+      { name: "Architectuur & Technieken" },
+      { name: "Ondersteuning & Tools" },
+      { name: "Infrastructuur & Platformen" },
+    ],
+    rings: [
+      { name: "Gebruik", color: "#6AA549" },
+      { name: "Probeer", color: "#66AFDD" },
+      { name: "Onderzoek", color: "#ffb612" },
+      { name: "Beperk", color: "#DF6056" }
+    ],
+    entries: data.entries
+  });
+}).catch(function(err) {
+  console.log('Error loading config.json', err);
+});
+</script>
+
+<table>
+<tr>
+<td>
+
+<h3>Wat is de Tech Radar?</h3>
+
+<p>
+The Developer.overheid.nl Tech Radar is een lijst van technieken ondersteund door een ring assignment. Deze bestaat uit vier ringen met de volgende karakteristieken:
+</p>
+
+<ul>
+<li><strong>Gebruik</strong> &mdash; Deze technieken (kunnen) worden ingezet in productie...</li>
+<li><strong>Probeer</strong> &mdash; Deze technieken zijn interessant en kunnen onderdeel zijn van een MVP in productie...</li>
+<li><strong>Onderzoek</strong> &mdash; Deze technieken lijken interessant en kunnen onderdeel zijn van een POC in een niet productie omgeving...</li>
+<li><strong>Beperk</strong> &mdash; Deze technieken zijn nog niet klaar voor gebruikt of op hun retour...</li>
+</ul>
+
+</td><td>
+
+<h3>Wat is het doel?</h3>
+
+<p>
+  Deze Tech Radar is bedoeld om...
+</p>
+
+<h3>Wie bepaalt dit?</h3>
+
+<p>
+  ...
+</p>
+
+<p>
+  ...
+</p>
+
+<p>
+<em>Gebaseerd op <a href="https://github.com/zalando/tech-radar">Zalando Tech Radar</a>.</em>
+</p>
+
+</td></tr>
+</table>
+
+</body>
+</html>
