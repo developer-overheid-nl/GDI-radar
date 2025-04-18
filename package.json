@@ -1,9 +1,9 @@
 {
-  "name": "don-tech-radar",
-  "version": "2024.1.0",
-  "description": "Tech Radar voor developer.overheid.nl",
-  "homepage": "https://github.com/developer-overheid-nl/tech-radar#readme",
-  "repository": "https://github.com/developer-overheid-nl/tech-radar.git",
+  "name": "GDI-radar",
+  "version": "2025.1.0",
+  "description": "Tech Radar voor de GDI bouwstenen op developer.overheid.nl",
+  "homepage": "https://github.com/developer-overheid-nl/gdi-radar#readme",
+  "repository": "https://github.com/developer-overheid-nl/GDI-radar.git",
   "license": "MIT",
   "private": true,
   "directories": {

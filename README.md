@@ -1,6 +1,6 @@
 # Wat is this?
 
-This is a POC for a Tech Radar at Developer.overheid.nl.
+This is a POC for the GDI Tech Radar at Developer.overheid.nl.
 
 This repository contains the code to generate the visualization:
 [`radar.js`](/docs/radar.js) (based on [d3.js v4](https://d3js.org)).

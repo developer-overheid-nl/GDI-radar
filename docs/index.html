@@ -24,16 +24,16 @@ fetch('./config.json').then(function(response) {
 }).then(function(data) {
   radar_visualization({
     repo_url: "https://github.com/developer-overheid.nl/tech-radar",
-    title: "Developer.overheid.nl Tech Radar",
+    title: "GDI Tech Radar",
     date: data.date,
     quadrants: [
-      { name: "Talen & Frameworks" },
-      { name: "Architectuur & Technieken" },
-      { name: "Ondersteuning & Tools" },
-      { name: "Infrastructuur & Platformen" },
+      { name: "Domein Infra en Overig" },
+      { name: "Domein Gegevensuitwisseling" },
+      { name: "Domein Interactie" },
+      { name: "Domein Toegang" },
     ],
     rings: [
-      { name: "Gebruik", color: "#6AA549" },
+      { name: "In gebruik", color: "#6AA549" },
       { name: "Probeer", color: "#66AFDD" },
       { name: "Onderzoek", color: "#ffb612" },
       { name: "Beperk", color: "#DF6056" }
@@ -56,10 +56,10 @@ The Developer.overheid.nl Tech Radar is een lijst van technieken ondersteund doo
 </p>
 
 <ul>
-<li><strong>Gebruik</strong> &mdash; Deze technieken (kunnen) worden ingezet in productie...</li>
-<li><strong>Probeer</strong> &mdash; Deze technieken zijn interessant en kunnen onderdeel zijn van een MVP in productie...</li>
-<li><strong>Onderzoek</strong> &mdash; Deze technieken lijken interessant en kunnen onderdeel zijn van een POC in een niet productie omgeving...</li>
-<li><strong>Beperk</strong> &mdash; Deze technieken zijn nog niet klaar voor gebruikt of op hun retour...</li>
+<li><strong>In gebruik</strong> &mdash; Deze Afspraken, Standaarden en Voorzieningen worden ingezet in productie.</li>
+<li><strong>Probeer</strong> &mdash; Deze Afspraken, Standaarden en Voorzieningen zijn interessant en kunnen onderdeel zijn van een MVP in productie.</li>
+<li><strong>Onderzoek</strong> &mdash; Deze Afspraken, Standaarden en Voorzieningen lijken interessant en kunnen onderdeel zijn van een POC in een niet productie omgeving zoals Digilab.</li>
+<li><strong>Beperk</strong> &mdash; Deze technieken zijn nog niet klaar voor gebruikt of op hun retour.</li>
 </ul>
 
 </td><td>
@@ -67,17 +67,17 @@ The Developer.overheid.nl Tech Radar is een lijst van technieken ondersteund doo
 <h3>Wat is het doel?</h3>
 
 <p>
-  Deze Tech Radar is bedoeld om...
+  Deze GDI Tech Radar is bedoeld om een beeld te geven van de Afspraken, Standaarden en Voorzieningen die in de GDI nu in gebruik zijn. Ook geeft de radar een beeld van de te onderzoeken en proberen ontwikkelingen 
 </p>
 
-<h3>Wie bepaalt dit?</h3>
+<h3>Dit concept is opgezet door:</h3>
 
 <p>
-  ...
+  Vedran Bilanovic (MinBZK)
 </p>
 
 <p>
-  ...
+  Martin avn der Plas (Geonovum)
 </p>
 
 <p>
