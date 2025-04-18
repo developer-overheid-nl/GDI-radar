@@ -27,10 +27,10 @@ fetch('./config.json').then(function(response) {
     title: "GDI Tech Radar",
     date: data.date,
     quadrants: [
-      { name: "Domein Infra en Overig" },
-      { name: "Domein Gegevensuitwisseling" },
-      { name: "Domein Interactie" },
-      { name: "Domein Toegang" },
+      { name: "Domein Infra en Overig" }, // 0 = Domein Infra en Overig
+      { name: "Domein Gegevensuitwisseling" }, // 1 = Domein Gegevensuitwisseling
+      { name: "Domein Interactie" }, // 2 = Domein Interactie
+      { name: "Domein Toegang" }, // 3 = Domein Toegang
     ],
     rings: [
       { name: "In gebruik", color: "#6AA549" },
